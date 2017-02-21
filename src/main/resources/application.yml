@@ -1,0 +1,20 @@
+server:
+  port: 8081
+
+spring:
+  rabbitmq:
+    host: 192.168.3.212
+    port: 5672
+    username: zipkin
+    password: zipkin@2017
+    virtualHost: /
+  sleuth:
+    sampler:
+      percentage: 1
+    enabled: true
+  #zipkin:
+    #enabled: true
+    #baseUrl: http://localhost:9411/
+sample:
+  zipkin:
+    enabled: true
